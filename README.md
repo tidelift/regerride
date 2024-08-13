@@ -20,6 +20,7 @@ There are five variables that need to be set in order for the script to execute 
 * CATALOG - Set in the script, scipt can be modified ot use it as an envar if desired
 * [CATALOG_STANDARD](https://api.tidelift.com/docs/#tag/Catalogs/operation/listViolationsForCatalog) - This script is intended to be used with the `known_packages` standard but could be adapted to work with other standards
 * TIDELIFT_API_KEY - This script requires a *user api key* which needs to be set as an environment variable and stored securly as a secret variable. 
+* OVERRIDE_STATUS - an override can have a status of approved or denied
 
 ### Who do I talk to if I have questions? ###
 
