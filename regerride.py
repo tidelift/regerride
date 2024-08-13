@@ -19,11 +19,9 @@ CATALOG_NAME = '<catalog_name>'  # replace with your catalog name
 CATALOG_STANDARD = 'known_packages' 
 OVERRIDE_STATUS = 'approved' # status can be 'approved' or 'denied'
 
-# List of regex patterns to match against package names
-REGEX_PATTERNS = [
-    r'^org\.TL\..*', # Replace with your regex pattern
-    # Add more patterns here
-]
+# Read regex patterns from the external file
+with open('package_patterns.txt', 'r') as file:
+    REGEX_PATTERNS = [line.strip() for line in file if line.strip()]
 
 # Define the headers for the API requests
 headers = {
