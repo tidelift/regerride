@@ -1,3 +1,8 @@
+# The script is for reference and/or educational purposes and not intended for production use
+# SPDX-License-Identifier: BlueOak-1.0.0
+# To use this script you need to export a Tidelift API as an enviornment variable.
+# Always ensure that you are saving your API keys and secrets in a secure secret store when running from CI/CD systems!
+
 import aiohttp
 import asyncio
 import regex as re
