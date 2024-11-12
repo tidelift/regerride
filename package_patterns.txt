@@ -1,0 +1,5 @@
+# add regex patterns for package names to filter
+# below is an example, change to a pattern to match and add additional patterns inline if desired
+# reference - https://www.w3schools.com/python/python_regex.asp
+
+^org\.TL\..*
